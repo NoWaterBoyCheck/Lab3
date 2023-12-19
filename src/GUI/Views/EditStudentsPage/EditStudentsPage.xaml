@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JSON_Dispatcher.EditStudentsPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid"
+            Grid.Row="0"
+            Grid.Column="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0"
+                Grid.Column="0"
+                Text="First Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="0"
+                Grid.Column="1"
+                Text="Middle Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="0"
+                Grid.Column="2"
+                Text="Last Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="0"
+                Grid.Column="3"
+                Text="Group"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            </Grid>
+
+            <HorizontalStackLayout Grid.Row="1"
+                Grid.Column="0"
+                Spacing="5"
+                VerticalOptions="Center"
+                HorizontalOptions="Center" >
+
+                    <Button VerticalOptions="Center"
+                    Clicked="OnBackButtonClicked"
+                    Text="Apply" />
+
+                    <Button VerticalOptions="Center"
+                    Clicked="OnAddButtonClicked"
+                    Text="Add" />
+
+            </HorizontalStackLayout>
+
+        </Grid>
+        
+    </ScrollView>
+
+</ContentPage>

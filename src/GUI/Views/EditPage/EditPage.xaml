@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JSON_Dispatcher.EditPage">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="grid"
+            Grid.Row="0"
+            Grid.Column="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0"
+                Grid.Column="0"
+                Text="First Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="1"
+                Grid.Column="0"
+                Text="Middle Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="2"
+                Grid.Column="0"
+                Text="Last Name"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="3"
+                Grid.Column="0"
+                Text="Faculty"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="4"
+                Grid.Column="0"
+                Text="Chair"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="5"
+                Grid.Column="0"
+                Text="Day"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="6"
+                Grid.Column="0"
+                Text="Time"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="7"
+                Grid.Column="0"
+                Text="Subject"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="8"
+                Grid.Column="0"
+                Text="Audience"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Label Grid.Row="9"
+                Grid.Column="0"
+                Text="Students"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+                <Entry WidthRequest="400" Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForFirstName" />
+                
+                <Entry WidthRequest="400" Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForMiddleName" />
+
+                <Entry WidthRequest="400" Grid.Row="2"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForLastName" />
+
+                <Entry WidthRequest="400" Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForFaculty" />
+                
+                <Entry WidthRequest="400" Grid.Row="4"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForChair" />
+
+                <Entry WidthRequest="400" Grid.Row="5"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForDay" />
+
+                <Entry WidthRequest="400" Grid.Row="6"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForTime" />
+
+                <Entry WidthRequest="400" Grid.Row="7"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForSubject" />
+
+                <Entry WidthRequest="400" Grid.Row="8"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="EntryForAudience" />
+
+                <HorizontalStackLayout
+                    Grid.Row="9"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Spacing="5" >
+
+                    <Button x:Name="ShowButton"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="Show"
+                        Clicked="ShowButton_Clicked" />
+
+                    <Button x:Name="EditButton"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="Edit"
+                        Clicked="EditButton_Clicked" />
+
+                </HorizontalStackLayout>
+
+            </Grid>
+
+            <Button Grid.Row="1"
+            Grid.Column="0"
+            VerticalOptions="Center"
+            Clicked="OnBackButtonClicked"
+            Text="Apply" />
+
+        </Grid>
+        
+    </ScrollView>
+
+</ContentPage>
